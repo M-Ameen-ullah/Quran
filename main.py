@@ -106,3 +106,6 @@ async def get_surah(sura_id: int, aya_no: int = None, additional: str = None):
         })
 
     return response
+if __name__=="main":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0",port=8000)
